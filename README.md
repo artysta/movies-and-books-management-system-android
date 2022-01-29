@@ -1,4 +1,4 @@
-# movies-and-books-management-system-android
+# Movies & Books Management System - Android
 
 **Movies & Books Management System Android** is an simple **Salesforce Mobile SDK** based [Connected App](https://help.salesforce.com/s/articleView?id=sf.connected_app_overview.htm&type=5) that uses Salesforce API to access records that are available in its [Salesforce version](https://github.com/artysta/movies-and-books-management-system-salesforce).
 
