@@ -9,6 +9,7 @@ project.xcworkspace
 .idea/
 .metadata/
 .settings/
+.project
 Podfile.lock
 Pods/
 bin/
