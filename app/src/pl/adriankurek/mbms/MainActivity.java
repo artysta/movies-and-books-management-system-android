@@ -107,23 +107,23 @@ public class MainActivity extends SalesforceActivity {
 	}	
 
 	/**
-	 * Called when "Fetch Contacts" button is clicked.
+	 * Called when "Fetch Movies" button is clicked.
 	 *
 	 * @param v
 	 * @throws UnsupportedEncodingException 
 	 */
-	public void onFetchContactsClick(View v) throws UnsupportedEncodingException {
-        sendRequest("SELECT Name FROM Contact");
+	public void onFetchMoviesClick(View v) throws UnsupportedEncodingException {
+        sendRequest("SELECT Name FROM MBMS_Movie__c");
 	}
 
 	/**
-	 * Called when "Fetch Accounts" button is clicked
+	 * Called when "Fetch Artists" button is clicked
 	 * 
 	 * @param v
 	 * @throws UnsupportedEncodingException 
 	 */
-	public void onFetchAccountsClick(View v) throws UnsupportedEncodingException {
-		sendRequest("SELECT Name FROM Account");
+	public void onFetchArtistsClick(View v) throws UnsupportedEncodingException {
+		sendRequest("SELECT Name FROM MBMS_Artist__c");
 	}	
 	
 	private void sendRequest(String soql) throws UnsupportedEncodingException {

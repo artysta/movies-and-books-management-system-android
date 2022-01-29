@@ -21,24 +21,25 @@
 			android:id="@+id/fetch_contacts"
 			android:layout_width="0dp"
 			android:layout_height="47dp"
-			android:onClick="onFetchContactsClick"
-			android:text="@string/fetch_contacts_button"
-			android:background="@drawable/sf__primary_color_button"
-			android:textColor="?attr/sfColorSecondary"
 			android:layout_gravity="center"
+			android:layout_marginEnd="10dp"
 			android:layout_weight="1"
-			android:layout_marginEnd="10dp"/>
+			android:background="@drawable/sf__primary_color_button"
+			android:onClick="onFetchMoviesClick"
+			android:text="@string/fetch_movies_button"
+			android:textColor="?attr/sfColorSecondary" />
 
-		<Button android:id="@+id/fetch_accounts"
+		<Button
+			android:id="@+id/fetch_accounts"
 			android:layout_width="0dp"
 			android:layout_height="47dp"
-			android:onClick="onFetchAccountsClick"
-			android:text="@string/fetch_accounts_button"
-			android:background="@drawable/sf__primary_color_button"
-			android:textColor="?attr/sfColorSecondary"
 			android:layout_gravity="center"
+			android:layout_marginEnd="10dp"
 			android:layout_weight="1"
-			android:layout_marginEnd="10dp" />
+			android:background="@drawable/sf__primary_color_button"
+			android:onClick="onFetchArtistsClick"
+			android:text="@string/fetch_artists_button"
+			android:textColor="?attr/sfColorSecondary" />
 
 		<Button android:id="@+id/clear"
 			android:layout_width="0dp"

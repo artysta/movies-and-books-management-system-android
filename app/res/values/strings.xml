@@ -5,7 +5,7 @@
 	<string name="app_package">pl.adriankurek.mbms</string>
     <string name="welcome">Welcome %s</string>
 	<string name="logout_button">Logout</string>
-	<string name="fetch_contacts_button">Fetch Contacts</string>
-	<string name="fetch_accounts_button">Fetch Accounts</string>
+	<string name="fetch_movies_button">Fetch Movies</string>
+	<string name="fetch_artists_button">Fetch Artists</string>
 	<string name="clear_button">Clear</string>
 </resources>
