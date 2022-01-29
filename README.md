@@ -9,7 +9,10 @@ After deployment you should:
  - search for the App Manager
  - locate **Movies_and_Books_Management_System_Android** application
  - click on the down arrow icon at the end
- - select **View** from the dropdown menu
+ - select **View** from the dropdown menu (check the screenshot below)
+
+ <img src="./screenshots/connected-app.png" alt="connected-app.png"/>
+
  - copy API Consumer Key
  - open **movies-and-books-management-system-android\app\res\values\bootconfig.xml** file in a text editor
  - replace **YOUR_CONSUMER_KEY_GOES_HERE** value with the key you have just copied
