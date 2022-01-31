@@ -18,7 +18,7 @@
 		android:layout_marginBottom="10dp">
 
 		<Button
-			android:id="@+id/fetch_contacts"
+			android:id="@+id/fetch_movies"
 			android:layout_width="0dp"
 			android:layout_height="47dp"
 			android:layout_gravity="center"
@@ -30,7 +30,7 @@
 			android:textColor="?attr/sfColorSecondary" />
 
 		<Button
-			android:id="@+id/fetch_accounts"
+			android:id="@+id/fetch_artists"
 			android:layout_width="0dp"
 			android:layout_height="47dp"
 			android:layout_gravity="center"
@@ -41,15 +41,80 @@
 			android:text="@string/fetch_artists_button"
 			android:textColor="?attr/sfColorSecondary" />
 
-		<Button android:id="@+id/clear"
+		<Button android:id="@+id/fetch_books"
 			android:layout_width="0dp"
 			android:layout_height="47dp"
-			android:onClick="onClearClick"
-			android:text="@string/clear_button"
-			android:background="@drawable/sf__secondary_color_button"
-			android:textColor="?attr/sfNegativeButtonTextColor"
+			android:onClick="onFetchBooksClick"
+			android:text="@string/fetch_books_button"
+			android:background="@drawable/sf__primary_color_button"
+			android:textColor="?attr/sfColorSecondary"
 			android:layout_gravity="center"
 			android:layout_weight="1"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?android:colorBackground"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp">
+
+		<Button
+			android:id="@+id/fetch_movie_actors"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:layout_gravity="center"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:background="@drawable/sf__primary_color_button"
+			android:onClick="onFetchMovieActorsClick"
+			android:text="@string/fetch_movie_actors_button"
+			android:textColor="?attr/sfColorSecondary" />
+
+		<Button
+			android:id="@+id/fetch_movie_photos"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:layout_gravity="center"
+			android:layout_marginEnd="10dp"
+			android:layout_weight="1"
+			android:background="@drawable/sf__primary_color_button"
+			android:onClick="onFetchMoviePhotosClick"
+			android:text="@string/fetch_movie_photos_button"
+			android:textColor="?attr/sfColorSecondary" />
+
+		<Button android:id="@+id/fetch_batch_logs"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:onClick="onFetchBatchLogsClick"
+			android:text="@string/fetch_batch_logs_button"
+			android:background="@drawable/sf__primary_color_button"
+			android:textColor="?attr/sfColorSecondary"
+			android:layout_gravity="center"
+			android:layout_weight="1"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="?android:colorBackground"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp">
+
+		<Button
+			android:id="@+id/clear"
+			android:layout_width="0dp"
+			android:layout_height="47dp"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="@drawable/sf__primary_color_button"
+			android:onClick="onClearClick"
+			android:text="@string/clear_button"
+			android:textColor="?attr/sfColorSecondary" />
 	</LinearLayout>
 
 	<ListView android:id="@+id/contacts_list"

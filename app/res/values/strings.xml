@@ -7,5 +7,9 @@
 	<string name="logout_button">Logout</string>
 	<string name="fetch_movies_button">Fetch Movies</string>
 	<string name="fetch_artists_button">Fetch Artists</string>
+	<string name="fetch_books_button">Fetch Books</string>
+	<string name="fetch_movie_actors_button">Fetch Actors</string>
+	<string name="fetch_movie_photos_button">Fetch Photos</string>
+	<string name="fetch_batch_logs_button">Fetch Batch Logs</string>
 	<string name="clear_button">Clear</string>
 </resources>

@@ -124,8 +124,48 @@ public class MainActivity extends SalesforceActivity {
 	 */
 	public void onFetchArtistsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Artist__c");
-	}	
-	
+	}
+
+	/**
+	 * Called when "Fetch Books" button is clicked
+	 *
+	 * @param v
+	 * @throws UnsupportedEncodingException
+	 */
+	public void onFetchBooksClick(View v) throws UnsupportedEncodingException {
+		sendRequest("SELECT Name FROM MBMS_Book__c");
+	}
+
+	/**
+	 * Called when "Fetch Movie Artists" button is clicked
+	 *
+	 * @param v
+	 * @throws UnsupportedEncodingException
+	 */
+	public void onFetchMovieActorsClick(View v) throws UnsupportedEncodingException {
+		sendRequest("SELECT Name FROM MBMS_Movie_Actor__c");
+	}
+
+	/**
+	 * Called when "Fetch Movie Photos" button is clicked
+	 *
+	 * @param v
+	 * @throws UnsupportedEncodingException
+	 */
+	public void onFetchMoviePhotosClick(View v) throws UnsupportedEncodingException {
+		sendRequest("SELECT Name FROM MBMS_Movie_Photo__c");
+	}
+
+	/**
+	 * Called when "Fetch Batch Logs" button is clicked
+	 *
+	 * @param v
+	 * @throws UnsupportedEncodingException
+	 */
+	public void onFetchBatchLogsClick(View v) throws UnsupportedEncodingException {
+		sendRequest("SELECT Name FROM MBMS_Batch_Log__c");
+	}
+
 	private void sendRequest(String soql) throws UnsupportedEncodingException {
 		RestRequest restRequest = RestRequest.getRequestForQuery(ApiVersionStrings.getVersionNumber(this), soql);
 
