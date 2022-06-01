@@ -2,7 +2,7 @@
 
 <resources>
     <string name="remoteAccessConsumerKey">YOUR_CONSUMER_KEY_GOES_HERE</string>
-    <string name="oauthRedirectURI">testsfdc:///mobilesdk/detect/oauth/done</string>
+    <string name="oauthRedirectURI">mbmsapp://auth/success</string>
     <string-array name="oauthScopes">
         <item>api</item>
 		<item>web</item>
