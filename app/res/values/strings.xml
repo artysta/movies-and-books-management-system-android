@@ -11,5 +11,8 @@
 	<string name="fetch_movie_actors_button">Fetch Actors</string>
 	<string name="fetch_movie_photos_button">Fetch Photos</string>
 	<string name="fetch_batch_logs_button">Fetch Batch Logs</string>
+	<string name="fetch_artist_news_button">Fetch Artist News</string>
+	<string name="fetch_book_news_button">Fetch Book News</string>
+	<string name="fetch_movie_news_button">Fetch Movie News</string>
 	<string name="clear_button">Clear</string>
 </resources>
