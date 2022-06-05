@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name="remoteAccessConsumerKey">YOUR_CONSUMER_KEY_GOES_HERE</string>
+    <string name="remoteAccessConsumerKey">3MVG9t0sl2P.pByoTR.X9jGM5kUG_JSySNzUskQkS15yM1jHCngl0BxZZS21cSxNkutcFEVFgqKrES4A4jxax</string>
     <string name="oauthRedirectURI">mbmsapp://auth/success</string>
     <string-array name="oauthScopes">
         <item>api</item>
@@ -9,3 +9,5 @@
     </string-array>
     <string name="androidPushNotificationClientId"></string>
 </resources>
+
+

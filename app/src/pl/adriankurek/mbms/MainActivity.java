@@ -46,9 +46,6 @@ import org.json.JSONArray;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
-/**
- * Main activity
- */
 public class MainActivity extends SalesforceActivity {
 
     private RestClient client;
@@ -88,110 +85,45 @@ public class MainActivity extends SalesforceActivity {
 		findViewById(R.id.root).setVisibility(View.VISIBLE);
 	}
 
-	/**
-	 * Called when "Logout" button is clicked. 
-	 * 
-	 * @param v
-	 */
 	public void onLogoutClick(View v) {
 		SalesforceSDKManager.getInstance().logout(this);
 	}
-	
-	/**
-	 * Called when "Clear" button is clicked. 
-	 * 
-	 * @param v
-	 */
+
 	public void onClearClick(View v) {
 		listAdapter.clear();
 	}	
 
-	/**
-	 * Called when "Fetch Movies" button is clicked.
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException 
-	 */
 	public void onFetchMoviesClick(View v) throws UnsupportedEncodingException {
         sendRequest("SELECT Name FROM MBMS_Movie__c");
 	}
 
-	/**
-	 * Called when "Fetch Artists" button is clicked
-	 * 
-	 * @param v
-	 * @throws UnsupportedEncodingException 
-	 */
 	public void onFetchArtistsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Artist__c");
 	}
-
-	/**
-	 * Called when "Fetch Books" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchBooksClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Book__c");
 	}
 
-	/**
-	 * Called when "Fetch Movie Artists" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchMovieActorsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Movie_Actor__c");
 	}
 
-	/**
-	 * Called when "Fetch Movie Photos" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchMoviePhotosClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Movie_Photo__c");
 	}
 
-	/**
-	 * Called when "Fetch Batch Logs" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchBatchLogsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Batch_Log__c");
 	}
 
-	/**
-	 * Called when "Fetch Artist News" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchArtistNewsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Artist_News__c");
 	}
 
-	/**
-	 * Called when "Fetch Book News" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchBookNewsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Book_News__c");
 	}
 
-	/**
-	 * Called when "Fetch Movie News" button is clicked
-	 *
-	 * @param v
-	 * @throws UnsupportedEncodingException
-	 */
 	public void onFetchMovieNewsClick(View v) throws UnsupportedEncodingException {
 		sendRequest("SELECT Name FROM MBMS_Movie_News__c");
 	}
